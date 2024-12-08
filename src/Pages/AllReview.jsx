@@ -33,6 +33,7 @@ const AllReview = () => {
       .then((data) => {
         setReviews(data);
         setIsLoading(false);
+        setDisplayReviews(data)
       });
   }, []);
   if (isLoading) {
